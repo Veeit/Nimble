@@ -105,11 +105,11 @@ public func throwAssertion<Out>() -> Predicate<Out> {
                     NimbleEnvironment.activeInstance.suppressTVOSAssertionWarning = true
                 }
             #endif
-            do {
-                _ = try actualExpression.evaluate()
-            } catch {
-                actualError = error
-            }
+//            do {
+//                _ = try actualExpression.evaluate()
+//            } catch {
+//                actualError = error
+//            }
         }
 
         if let actualError = actualError {
